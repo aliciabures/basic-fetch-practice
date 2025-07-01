@@ -1,0 +1,95 @@
+body{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    width:100vw;
+    background-color: pink;
+
+}
+h1{
+    text-align: center;
+}
+div{
+    border: solid;
+    
+}
+.buttons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+button{
+    color:darkgreen;
+    font-size: 1em;
+    width:50vw;
+    margin:0.5em;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: bold;
+
+}
+
+button:hover{
+    background-color: hotpink;
+}
+.user-card{
+    height:200px;
+    padding: 0;
+    border:solid;
+    text-align: center;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+.buttons{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content: space-around;
+    
+}
+.click{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.user-card{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    
+}
+
+.one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.two{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+.three{
+    grid-column:2/3;
+    grid-row:1/2;
+
+}
+.four{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+}
+
+@media only screen and (min-width: 992px){
+
+.user-card{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+}
